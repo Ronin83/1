@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NopeSky</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            text-align: center;
+            position: relative;
+        }
+        .container {
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1; /* Ensure the content stays above the decorative elements */
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        p {
+            color: #666;
+            font-size: 18px;
+        }
+        .tagline {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .tagline span {
+            color: #ff5e00;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .tagline span:nth-child(2) {
+            color: #00a3ff;
+            font-family: 'Arial', sans-serif;
+        }
+        .tagline span:nth-child(3) {
+            color: #ff0000;
+            font-family: 'Arial', sans-serif;
+        }
+        .tagline span:nth-child(4) {
+            color: #00ff7a;
+            font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+        }
+        .tagline span:nth-child(5) {
+            color: #ff0000; /* Red */
+            font-family: 'Arial', sans-serif;
+        }
+        /* Button styles */
+        .surprise-button {
+            background-color: #ff5e00;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .surprise-button:hover {
+            background-color: #ff3a00;
+        }
+        /* Button animation */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .surprise-button.animated {
+            animation: pulse 1.5s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hi, I am NopeSky.</h1>
+        <p>Just doin' Gaming and YouTube stuffs.</p>
+        <p>Check out my YouTube channel: <a href="https://www.youtube.com/@ImNotNopeSky">https://www.youtube.com/@ImNotNopeSky</a></p>
+        <p class="tagline">Eat. <span>Sleep.</span> <span>Game.</span> <span>Repeat.</span></p>
+        <!-- Button -->
+        <button class="surprise-button animated" onclick="redirectToSurprise()">Surprise</button>
+    </div>
+    
+    <!-- Random decorative elements -->
+    <div class="decor circle"></div>
+    <div class="decor triangle"></div>
+    <div class="decor line"></div>
+    <div class="decor square"></div>
+    <div class="decor diamond"></div>
+    <div class="decor star"></div>
+    <div class="decor pentagon"></div>
+    <div class="decor hexagon"></div>
+
+    <script>
+        function redirectToSurprise() {
+            window.location.href = "https://youtu.be/dQw4w9WgXcQ?si=XiPcL4HIqw26auql";
+        }
+    </script>
+</body>
+</html>
